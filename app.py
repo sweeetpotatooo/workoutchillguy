@@ -8,7 +8,6 @@ from bson import ObjectId
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "your_secret_key"  # 실제 환경에서는 안전하게 보관 (.env 등)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/1weekmini"
-#app.config["MONGO_URI"] = "mongodb://sehyun5004:tpgus8028~@3.37.61.32:27017/1weekmini?authSource=admin"
 
 mongo = PyMongo(app)
 users_collection = mongo.db.users
